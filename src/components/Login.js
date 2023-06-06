@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import {
   MDBContainer,
@@ -100,7 +101,12 @@ function Login() {
                         <a href="#!">Forgot password?</a>
                     </div>
 
-                    <MDBBtn className="mb-4" onClick={submit}>
+                    <MDBBtn className="btn btn-primary rounded-pill d-flex justify-content-center align-items-center mb-4" onClick={submit} style={{
+                            backgroundColor: "blue",
+                            marginLeft: "auto",
+                            marginRight: "auto",
+                            display: "block",
+                        }}>
                         Sign in
                     </MDBBtn>
 
